@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Product from "../product/Product";
+import Product from "../Product/Product";
 import Loader from "../Loader/Loader";
 
 function Products(){
@@ -31,10 +31,14 @@ function Products(){
         return <div>{error}</div>
     
     return <>
-        <h1>Products</h1>
-        {products.map((product) => (
-            <Product key={product.id} product={product}/>
-       ))}
+        <div className="container">
+            <h1>Products</h1>
+            <div className="grid-responsive-3">
+                {products.map((product) => (
+                    <Product key={product.id} product={product}/>
+                ))}
+            </div>
+        </div>
     </>
 }
 export default Products;
