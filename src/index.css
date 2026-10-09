@@ -1,1 +1,53 @@
-@import "tailwindcss";
+@import "tailwindcss";@theme {
+    --color-primary:#B94E70;
+    --color-secondary:#806F77;
+
+    --color-bg:#FFF8FA; 
+    --color-bg-secondary:#806F77;
+
+    --breakpoint-xs: 29.375rem; 
+}
+
+@layer base {
+    body{
+        background-color: var(--color-bg);
+        color: var(--color-primary);
+    }
+    .container{
+        @apply mx-auto;
+    }
+    img{
+        @apply w-full block;
+    }
+    p{
+        @apply font-[Lato];
+        @apply text-[14px] xs:text-[16px] sm:text-[18px];
+    }
+     h1{
+        @apply uppercase font-semibold;
+        @apply text-[44px]  md:text-[54px];  
+    }
+    h2{
+        @apply uppercase font-semibold;
+        @apply text-[28px] md:text-[36px];
+    }
+    h3{
+        @apply uppercase font-semibold;
+        @apply text-[18px] md:text-[20px];
+    }
+    a {
+        @apply cursor-pointer uppercase font-semibold;
+    }
+}
+
+@layer utilities{
+    .row-between{
+        @apply flex justify-between items-center;
+    }
+    .center{
+        @apply flex items-center justify-center;
+    }
+    .column-center{
+        @apply flex flex-col items-center text-center;
+    }
+}
