@@ -24,7 +24,6 @@
     }
 
     p {
-        @apply font-[Lato];
         @apply text-[14px] xs:text-[16px] sm:text-[18px];
     }
 
@@ -41,6 +40,9 @@
     h3 {
         @apply capitalize font-semibold;
         @apply text-[12px] md:text-[14px] lg:text-[16px];
+    }
+    li {
+        @apply text-[14px] xs:text-[16px] sm:text-[18px];
     }
 }
 

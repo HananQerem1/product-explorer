@@ -11,7 +11,7 @@ function Product ({product}){
                         <img src="./star.svg" className="size-5"/>
                         {product.rating}/5</span>
                     <span>${product.price}</span>
-                    <span>%{product.discountPercentage}</span>
+                    <span>%{product.discountPercentage} discount</span>
                     <span>{product.stock} {stockString}</span>
                 </div>
             </div>
